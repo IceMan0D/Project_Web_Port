@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Navigation */
+nav {
+    padding: 1rem 5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+    ul {
+      display: flex;
+      
+      li {
+        list-style: none;
+        padding: 0 2rem 0 0;
+        a {
+            text-decoration: none;
+            color: #626568;
+            cursor: pointer;
+            &:hover { 
+                color: #1369c0;
+                border-bottom: 3px solid #1369c0;
+            }
+        }
+      }
+    }
+  }
+
+/* Hero */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+
+  .introduce {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    span {
+      color: #1369c0;
+    }
+
+    .contact button {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #1369c0;
+      color: #fff;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fff;
+        color: #1369c0;
+        outline: 1px solid #1369c0;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.profile {
+  /* border-radius: 50%; */
+  /* height: 300px; */
+  width: 300px;
+  padding: 0 2rem 0 0;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
