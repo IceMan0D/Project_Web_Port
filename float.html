@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .col { 
+            float: left;
+            width: 300px;
+            padding: 1rem;
+            margin: 1rem;
+            border: 2px solid;
+            background-color: pink;
+
+            &.col>*{
+                color: #fff;
+            }
+            
+            &.box_1 { 
+                background-color: red;
+            }
+
+            &.box_2 { 
+                background-color: green;
+            }
+
+            &.box_3 { 
+                background-color: blue;
+            }
+            &.box_4 { 
+                /* ยกเลิกการ float กลับมาเป็น static */
+                clear: left;
+            }
+        }
+
+        p { 
+            clear: both;
+        }
+
+    </style>
+</head> 
+<body>
+    <div class="col box_1">
+        1
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eligendi magni est rerum blanditiis. Modi quis fuga, autem suscipit deleniti consectetur, inventore porro quam voluptates, consequatur reprehenderit deserunt eum unde.</p>
+    </div>
+    <div class="col box_2 ">
+        2
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eligendi magni est rerum blanditiis. Modi quis fuga, autem suscipit deleniti consectetur, inventore porro quam voluptates, consequatur reprehenderit deserunt eum unde.
+    </div>
+    <div class="col box_3">
+        3
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eligendi magni est rerum blanditiis. Modi quis fuga, autem suscipit deleniti consectetur, inventore porro quam voluptates, consequatur reprehenderit deserunt eum unde.
+    </div>
+    <div class="col box_4">
+        4
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eligendi magni est rerum blanditiis. Modi quis fuga, autem suscipit deleniti consectetur, inventore porro quam voluptates, consequatur reprehenderit deserunt eum unde.
+    </div>
+    <div class="col box_5 ">
+        5
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eligendi magni est rerum blanditiis. Modi quis fuga, autem suscipit deleniti consectetur, inventore porro quam voluptates, consequatur reprehenderit deserunt eum unde.
+    </div>
+    <div class="col box_6">
+        6
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eligendi magni est rerum blanditiis. Modi quis fuga, autem suscipit deleniti consectetur, inventore porro quam voluptates, consequatur reprehenderit deserunt eum unde.
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quae, recusandae placeat repellat qui illo, labore itaque quibusdam cupiditate minus, voluptatum error rerum. Fugiat accusamus earum quis rem tempora vitae.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consequatur dolorem perspiciatis laboriosam voluptatibus ipsa quisquam incidunt dolores, quod sed culpa, nisi nihil assumenda dicta at odit. Quo, enim mollitia!
+    </p>
+</body>
+</html>
