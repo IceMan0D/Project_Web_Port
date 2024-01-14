@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+  }
+
+  /* table td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: left;
+  }
+
+  table td:last-child {
+    text-align: center;
+  }
+
+  img { 
+    width: 500px;
+  } */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* width: 400px; */
+    /* text-align: center; */
+    > .header { 
+        text-align: center;
+        > img { 
+            border-radius: 10px;
+        }
+    }
+    > .recipe { 
+        > h2 { 
+            text-align: center;
+        }
+    }
+    > .method { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > h2 { 
+            text-align: center;
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  td[colspan="2"] {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  td:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+
+  input[type="submit"] {
+    background-color: #0d6af4;
+    border: none;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 1rem;
+    &:hover { 
+        background-color: #0b5ed7;
+    }
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    &:hover { 
+        background-color: #bb2d3b;
+    }
+}
+
+
+
