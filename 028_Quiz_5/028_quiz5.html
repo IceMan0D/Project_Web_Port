@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 5 : Box Model</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .main {
+        border: 1px solid red;
+        width: 80%;
+        margin: 0 auto;
+        /* padding: 10px; */
+      }
+
+      .feature,
+      .col1,
+      .col2 {
+        float: left;
+        width: 20%;
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        padding: 5px;
+      }
+
+      .feature {
+        width: 50%;
+      }
+
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>6540011028 Noppon Angchoun</h1>
+    <h2>Quiz 5 : Box Modle</h2>
+
+    <div class="main">
+      <div class="feature">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+          blanditiis accusamus possimus ipsum itaque sapiente vel quos maxime
+          dolorum quis!
+        </p>
+      </div>
+      <div class="col1">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+          blanditiis accusamus possimus ipsum itaque sapiente vel quos maxime
+          dolorum quis!
+        </p>
+      </div>
+      <div class="col2">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+          blanditiis accusamus possimus ipsum itaque sapiente vel quos maxime
+          dolorum quis!
+        </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

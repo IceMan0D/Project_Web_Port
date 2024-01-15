@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .container,
+      .container_2 {
+        display: flex;
+        > .col {
+          border: 1px solid red;
+          padding: 1rem;
+          margin: 10px 5px;
+        }
+      }
+
+      .container_2 {
+        justify-content: space-around;
+        > .col {
+          width: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          architecto quia doloremque harum, non voluptas id eligendi iusto
+          dolorem fuga ratione, magnam illo corporis dignissimos labore
+          distinctio dicta error ipsam?
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam alias
+          libero et minus harum, nam cumque sint optio perspiciatis ipsam enim
+          provident aut blanditiis sequi similique. Aliquid necessitatibus
+          soluta omnis!
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+          reprehenderit voluptas, quasi amet accusamus ipsa molestiae est
+          repellat ut officiis deleniti placeat maxime cumque perferendis
+          obcaecati. Laborum vitae quibusdam modi!
+        </p>
+      </div>
+    </div>
+    <div class="container_2">
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+          reprehenderit voluptas, quasi amet accusamus ipsa molestiae est
+          repellat ut officiis deleniti placeat maxime cumque perferendis
+          obcaecati. Laborum vitae quibusdam modi!
+        </p>
+      </div>
+      <div class="col">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita,
+          reprehenderit voluptas, quasi amet accusamus ipsa molestiae est
+          repellat ut officiis deleniti placeat maxime cumque perferendis
+          obcaecati. Laborum vitae quibusdam modi!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
