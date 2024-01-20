@@ -8,6 +8,16 @@ body {
   padding-top: 5rem;
 }
 
-.navbar-brand{ 
+/* .navbar-brand{ 
   color: #F6D776;
+} */
+
+
+.card { 
+  margin-right: 20px;
 }
+
+.profile { 
+  height: 400px;
+}
+
