@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #errusername,
+      #errpassword {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <p>Login</p>
+      <label for="">Username: </label>
+      <input type="text" name="" id="username" />
+      <p id="errusername">Username must more than 8</p>
+      <label for="">Password: </label>
+      <input type="password" id="password" />
+      <p id="errpassword">Password must more than 8</p>
+      <input type="submit" value="submit" id="send" />
+    </form>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("form").addEventListener("submit", (event) => {
+          event.preventDefault();
+          let username = document.querySelector("#username").value;
+          let password = document.querySelector("#password").value;
+          if (username.length < 8) {
+            document.getElementById("errusername").style.display = "block";
+          } else {
+            document.getElementById("errusername").style.display = "none";
+          }
+
+          if (password.length < 8) {
+            document.getElementById("errpassword").style.display = "block";
+          } else {
+            document.getElementById("errpassword").style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

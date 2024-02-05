@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button id="clickme">Click</button>
+
+    <form action="">
+      <label for="">Name :</label>
+      <input type="text" name="" id="input" />
+      <input type="submit" value="submit" id="submit" />
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("form").onsubmit = () => {
+          let name = document.querySelector("#input").value;
+          alert(name);
+        };
+      });
+
+      document.querySelector("#clickme").onclick = () => {
+        document.querySelector("h1").innerHTML = "GoodBye";
+        document.querySelector("h1").style.color = "red";
+      };
+
+      //   document.querySelector("#submit").addEventListener("click", () => {
+      //     let value = document.querySelector("#input").value;
+      //     document.write(value);
+      //   });
+    </script>
+  </body>
+</html>
