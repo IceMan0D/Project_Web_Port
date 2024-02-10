@@ -1,86 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Active Learning 3: ระบบลงทะเบียนศิษเก่า</title>
-  </head>
-  <body>
-    <h1>รายชื่อ</h1>
-    <ul>
-      <li>นายนพพล เอ่งฉ้วน 6540011028</li>
-      <li>นางธันยาภรณ์ ฤทธาภัย 6540011056</li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Active Learning 3: ระบบลงทะเบียนศิษเก่า</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+
+    * {
+      font-family: 'Kanit', sans-serif;
+    }
+
+    body {
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    img {
+      height: 100px;
+    }
+
+    .header {
+      padding: 1rem 0;
+    }
+
+    .test {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="container member text-center my-5">
+    <h1 class="fw-bold">รายชื่อ</h1>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">นายนพพล เอ่งฉ้วน 6540011028</li>
+      <li class="list-group-item">นางธันยาภรณ์ ฤทธาภัย 6540011056</li>
     </ul>
-    <form action="">
-      <h1>ระบบลงทะเบียนศิษเก่า IT + IS</h1>
-      <label for="name">ชื่อ-นามสกุล :</label>
-      <input type="text" name="name" placeholder="ชื่อ-นามสกุล" required />
-      <br />
+  </div> -->
+  <!-- <div class="container-fluid text-center my-5">
+    <img src="contact-form.png" alt="" class="pe-3">
+    <h1 class="text-center fw-semibold header">ระบบลงทะเบียนศิษเก่า IT + IS</h1>
+  </div> -->
 
-      <label for="id">รหัสนักศึกษา :</label>
-      <input type="text" name="id" placeholder="รหัสนักศึกษา" required />
-      <br />
+  <form action="" class="my-5">
+    <div class="container test">
+      <h1 class="text-center fw-semibold header">ระบบลงทะเบียนศิษเก่า IT + IS</h1>
+      <div class="row g-3">
+        <!-- Name -->
+        <div class="col-md-6">
+          <label for="exampleFormControlInput1" class="form-label fw-semibold ">ชื่อ-นามสกุล</label>
+          <input type="text" class="form-control" placeholder="แดง จันทร์โอชา">
+        </div>
+        <!-- Student Number -->
+        <div class="col-md-6">
+          <label for="exampleFormControlInput1" class="form-label fw-semibold">รหัสนักศึกษา</label>
+          <input type="text" class="form-control" placeholder="65XXXXXXXX">
+        </div>
+        <!-- Year -->
+        <div class="col-md-6">
+          <label for="exampleFormControlInput1" class="form-label fw-semibold">ปีการศึกษา</label>
+          <input type="number" class="form-control" placeholder="" value="2024">
+        </div>
+        <!-- Phone Number -->
+        <div class="col-md-6">
+          <label for="exampleFormControlInput1" class="form-label fw-semibold">เบอร์โทรติดต่อ</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="064XXXXXXX">
+        </div>
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label fw-semibold">อีเมลล์</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <!-- Gender -->
+        <div class="col-md-6">
+          <label for="" class="form-label fw-semibold pe-3">เพศ</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0">
+            <label class="form-check-label" for="inlineRadio1">ชาย</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1">
+            <label class="form-check-label" for="inlineRadio2">หญิง</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="2">
+            <label class="form-check-label" for="inlineRadio3">LGBTQ+</label>
+          </div>
+        </div>
+        <!-- syllabus -->
+        <div class="col-md-6">
+          <label for="" class="form-label fw-semibold pe-3">หลักสูตร</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptionsx" id="inlineRadio1" value="0">
+            <label class="form-check-label" for="inlineRadio1">IT</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptionsx" id="inlineRadio2" value="1">
+            <label class="form-check-label" for="inlineRadio2">IS</label>
+          </div>
+        </div>
+        <!-- career -->
+        <div class="col-md-6">
+          <label for="exampleFormControlInput1" class="form-label fw-semibold">อาชีพปัจจุบัน</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <!-- Field -->
+        <div class="col-md-6">
+          <label for="" class=" form-label fw-semibold">ระบุประเภทงานที่ทำ</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>SA</option>
+            <option value="1">Developer</option>
+            <option value="2">Graphic Design</option>
+            <option value="3">Digital Marketing</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label for="exampleFormControlTextarea1" class="form-label fw-semibold">ที่อยู่</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <!-- Work Address -->
+        <div class="col-md-12">
+          <label for="exampleFormControlTextarea1" class="form-label fw-semibold">สภานที่ทำงาน</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
 
-      <label for="gender">เพศ :</label>
-      <input type="radio" name="gender" value="male" />ชาย
-      <input type="radio" name="gender" value="female" />หญิง
-      <input type="radio" name="gender" value="LGBTQ+" />LGBTQ+
-      <br />
+        <!-- File Input -->
+        <div class="col-md-12">
+          <label for="formFile" class="form-label fw-semibold">อัพโหลดภาพถ่ายตนเอง</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
 
-      <label for="year">ปีการศึกษา :</label>
-      <input type="number" name="year" min="0" />
-      <br />
+        <!-- Button Submit -->
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">ส่งข้อมูล</button>
 
-      <label for="address">ที่อยู่ :</label>
-      <textarea
-        name="address"
-        cols="30"
-        rows="10"
-        placeholder="กรอกที่อยู่"
-      ></textarea>
-      <br />
+    </div>
 
-      <label for="email">อีเมลล์ :</label>
-      <input type="email" name="email" placeholder="example@gmail.com" />
-      <br />
+    <!-- <label for="name">ชื่อ-นามสกุล :</label>
+    <input type="text" name="name" placeholder="ชื่อ-นามสกุล" required />
+    <br />
 
-      <label for="text">เบอร์โทรติดต่อ :</label>
-      <input type="text" name="text" placeholder="06XXXXXXX" />
-      <br />
+    <label for="id">รหัสนักศึกษา :</label>
+    <input type="text" name="id" placeholder="รหัสนักศึกษา" required />
+    <br />
 
-      <label for="department">หลักสูตร :</label>
-      <input type="radio" name="dept" value="IT" />IT
-      <input type="radio" name="dept" value="IS" />IS
-      <br />
+    <label for="gender">เพศ :</label>
+    <input type="radio" name="gender" value="male" />ชาย
+    <input type="radio" name="gender" value="female" />หญิง
+    <input type="radio" name="gender" value="LGBTQ+" />LGBTQ+
+    <br />
 
-      <label for="occupation">อาชีพปัจจุบัน :</label>
-      <input type="text" name="occupation" />
-      <br />
+    <label for="year">ปีการศึกษา :</label>
+    <input type="number" name="year" min="0" />
+    <br />
 
-      <label for="location">สถานที่ทำงาน :</label>
-      <textarea
-        name="location"
-        cols="30"
-        rows="10"
-        placeholder="ระบุชื่อบริษัทและที่อยู่"
-      ></textarea>
-      <br />
+    <label for="address">ที่อยู่ :</label>
+    <textarea name="address" cols="30" rows="10" placeholder="กรอกที่อยู่"></textarea>
+    <br />
 
-      <label for="type_occu">ระบุประเภทงานที่ทำ :</label>
-      <select name="type_occu" id="">
-        <option value="SA">SA</option>
-        <option value="Developer">Developer</option>
-        <option value="Graphic Design">Graphic Design</option>
-        <option value="Digital Marketing">Digital Marketing</option>
-      </select>
-      <br />
+    <label for="email">อีเมลล์ :</label>
+    <input type="email" name="email" placeholder="example@gmail.com" />
+    <br />
 
-      <label for="user_profile">อัพโหลดภาพถ่าย :</label>
-      <input type="file" name="user_profile" />
-      <br />
+    <label for="text">เบอร์โทรติดต่อ :</label>
+    <input type="text" name="text" placeholder="06XXXXXXX" />
+    <br />
 
-      <br />
-      <input type="submit" value="ส่งข้อมูล" />
-    </form>
-  </body>
+    <label for="department">หลักสูตร :</label>
+    <input type="radio" name="dept" value="IT" />IT
+    <input type="radio" name="dept" value="IS" />IS
+    <br />
+
+    <label for="occupation">อาชีพปัจจุบัน :</label>
+    <input type="text" name="occupation" />
+    <br />
+
+    <label for="location">สถานที่ทำงาน :</label>
+    <textarea name="location" cols="30" rows="10" placeholder="ระบุชื่อบริษัทและที่อยู่"></textarea>
+    <br />
+
+    <label for="type_occu">ระบุประเภทงานที่ทำ :</label>
+    <select name="type_occu" id="">
+      <option value="SA">SA</option>
+      <option value="Developer">Developer</option>
+      <option value="Graphic Design">Graphic Design</option>
+      <option value="Digital Marketing">Digital Marketing</option>
+    </select>
+    <br />
+
+    <label for="user_profile">อัพโหลดภาพถ่าย :</label>
+    <input type="file" name="user_profile" />
+    <br />
+
+    <br />
+    <input type="submit" value="ส่งข้อมูล" />
+  </form> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
