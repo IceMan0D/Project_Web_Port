@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&display=swap");
 * {
-  font-family: 'Noto Sans Thai Looped', sans-serif;
+  font-family: "Noto Sans Thai Looped", sans-serif;
 }
 
-body { 
+body {
   padding-top: 5rem;
 }
 
@@ -11,12 +11,10 @@ body {
   color: #F6D776;
 } */
 
-
-.card { 
+.card {
   margin-right: 20px;
 }
 
-.profile { 
+.profile {
   height: 400px;
 }
-
